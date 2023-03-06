@@ -1,7 +1,6 @@
 import pandas
 import numpy
 import matplotlib.pyplot as plt
-import math
 
 df = pandas.read_csv("HW6_prob1_dataset1.csv")
 df = df.to_numpy()
@@ -54,7 +53,7 @@ plt.xlim(right = 15)
 plt.xlim(left = -5)
 plt.ylim(top = 15)
 plt.ylim(bottom = -15)
-z = (c[0]*(x**2) + c[1]*x*y + c[2]*(y**2) + c[3] * x + c[4] * y)
+z = (c[0]*(x**2) + c[1]*x*y + c[2]*(y**2) + c[3] * x + c[4] * y+1)
 plt.contour(x, y, z, [0], colors='k')
 plt.show()
 
